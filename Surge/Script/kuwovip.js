@@ -1,3 +1,14 @@
+/*
+Made by Meeta(酷我音乐)
+https?:\/\/.*\.kuwo\.cn script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Surge/Script/kuwovip.js,requires-body=true
+
+hostname = *.kuwo.cn
+
+*/
+
+
+
+
 
 var body = $response.body;
 var url = $request.url;
@@ -27,10 +38,3 @@ if (url.indexOf(path2) != -1){
 svip_kuwo()
 }
 $done({body});
-/******* ******* ******* *******
-Made by Meeta(酷我音乐)
-https?:\/\/.*\.kuwo\.cn script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Surge/Script/kuwovip.js,requires-body=true
-
-hostname = *.kuwo.cn
-
-*/
