@@ -2,7 +2,7 @@
 多了|| element.hasOwnProperty('from') by小壮提供
 
 
-http-response https://app.bilibili.com/x/v2/view\?access_key requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Surge/Script/bilibiliViewlate.js,script-update-interval=-1
+http-response https://app.bilibili.com/x/v2/view\?access_key requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Surge/Script/bilibiliViewrelate.js,script-update-interval=-1
 
 hostname = app.bilibili.com, api.bilibili.com
 
