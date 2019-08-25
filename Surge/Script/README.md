@@ -31,8 +31,11 @@ hostname = api.amemv.com, api*.musical.ly, api*.tiktokv.com
 //zhihu
 
 http-response https://api.zhihu.com/moments requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Surge/Script/zhihuFeed.js,script-update-interval=-1
+
 http-response https://api.zhihu.com/topstory/recommend requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Surge/Script/zhihuRecommed.js,script-update-interval=-1
+
 http-response https://api.zhihu.com/.*/questions requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Surge/Script/zhihuAnswer.js,script-update-interval=-1
+
 http-response https://api.zhihu.com/market/header requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Surge/Script/zhihuMarket.js,script-update-interval=-1
 
 [MITM]
