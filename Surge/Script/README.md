@@ -74,7 +74,7 @@ http-response https?:\/\/p\.doras\.api\.vcinema\.cn\/v5.0\/user/  script-path= h
 
 hostname = *.api.vcinema.cn
 
-# 微博
+# 微博去广告
 
 http-response ^https?:\/\/(api|mapi)\.weibo\.(cn|com)\/2/(statuses\/(unread|extend|positives/get|friends(\/|_)timeline)|stories\/(video_stream|home_list)|groups\/timeline|fangle\/timeline|profile\/statuses|comments\/build_comments|photo\/recommend_list|service\/picfeed|searchall|cardlist) script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Surge/Script/wb_ad.js,requires-body=true
 
@@ -82,7 +82,7 @@ http-response ^https?:\/\/(api|mapi)\.weibo\.(cn|com)\/2/(statuses\/(unread|exte
 
 hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com
 
-# 网易漫画
+# 网易漫画vip
 
  http-response https?:\/\/api-163\.biliapi\.net\/getUserProfile script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Surge/Script/wymh.js,requires-body=true
 
@@ -90,7 +90,7 @@ hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com
 
 hostname = api-163.biliapi.net, getuserinfo-globalapi.zymk.cn
 
-# 知音漫客
+# 知音漫客vip
 
 http-response ^https://getuserinfo-globalapi.zymk.cn/app_api/v5/(getuserinfo|coin_account|getuserinfo_ticket|getcomicinfo)/ script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Surge/Script/zymk.js,requires-body = true
 
