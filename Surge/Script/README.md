@@ -168,3 +168,13 @@ http-response ^https://api\.rr\.tv/v3plus/index/(channel|todayChoice)$ requires-
 [MITM]
 
 hostname = api.rr.tv
+
+# 网易漫画Vip  NobyDa自用版
+
+// quantumult x
+
+[rewrite_local]
+
+^https?:\/\/api-163\.biliapi\.net\/(getUserProfile|source\/detail) url script-response-body https://raw.githubusercontent.com/Cyansx/Profiles/master/Surge/Script/wymh163.js
+
+hostname = api-163.biliapi.net,
