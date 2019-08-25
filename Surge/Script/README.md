@@ -126,3 +126,13 @@ hostname = p.du.163.com
 ^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json url script-response-body https://raw.githubusercontent.com/Cyansx/Profiles/master/Surge/Script/woniuyuedu.js
 
 ^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json url response-body "tradeEndTime":\d{10} response-body "tradeEndTime":1679685290
+
+//微信公众号去广告
+
+[Script]
+
+http-response ^https://mp\.weixin\.qq\.com/mp/getappmsgad requires-body=1,max-size=-1,script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Surge/Script/WeChat.js
+
+[MITM]
+
+hostname = mp.weixin.qq.com
