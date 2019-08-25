@@ -1,4 +1,4 @@
-[Rule]
+# > [Rule]
 
 # >  ZhiHu
 
@@ -17,7 +17,7 @@ hostname = api.amemv.com, api*.musical.ly, api*.tiktokv.com, api.zhihu.com, app.
 
 
 
-[Script]
+# > [Script]
 
 # > tiktok去水印
 
