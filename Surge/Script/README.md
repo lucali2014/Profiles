@@ -19,6 +19,16 @@ hostname = api.amemv.com, api*.musical.ly, api*.tiktokv.com, api.zhihu.com, app.
 
 # > [Script]
 
+# 抖音去水印去广告
+
+[Script]
+
+http-response ^https://[\s\S]*\.snssdk\.com/.+/(feed|post)/ requires-body=1,max-size=-1,script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Surge/Script/Aweme.js
+
+[MITM]
+
+hostname = *.snssdk.com
+
 # tiktok去水印
 
 http-request ^https:\/\/[\s\S]*\/aweme\/v1\/play\/\?video script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Surge/Script/Amark.js,requires-body=true
@@ -101,7 +111,7 @@ hostname = getuserinfo-globalapi.zymk.cn
 
 # 网易蜗牛读书
 
-Surge
+// Surge
 
 [URL Rewrite]
 
@@ -115,7 +125,7 @@ http-response ^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json script-pat
 
 hostname = p.du.163.com
 
-Quantumult X 
+//Quantumult X 
 
 hostname = p.du.163.com
 
@@ -146,3 +156,4 @@ http-response ^https://[a-zA-Z]*\.snssdk\.com/api/news/feed/v88/ requires-body=1
 [MITM]
 
 hostname = *.snssdk.com
+
