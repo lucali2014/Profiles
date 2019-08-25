@@ -57,6 +57,7 @@ https?:\/\/.*\.kuwo\.cn script-path=https://raw.githubusercontent.com/Cyansx/Pro
 [MITM]
 
 hostname = *.kuwo.cn,
+
 //南瓜电影
 
 http-response https?:\/\/p\.doras\.api\.vcinema\.cn\/v5.0\/user/  script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Surge/Script/ngdy.js,requires-body=true
