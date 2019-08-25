@@ -157,3 +157,12 @@ http-response ^https://[a-zA-Z]*\.snssdk\.com/api/news/feed/v88/ requires-body=1
 
 hostname = *.snssdk.com
 
+# 人人视频去广告
+
+[Script]
+
+http-response ^https://api\.rr\.tv/v3plus/index/(channel|todayChoice)$ requires-body=1,max-size=-1,script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Surge/Script/RRad.js
+
+[MITM]
+
+hostname = api.rr.tv
