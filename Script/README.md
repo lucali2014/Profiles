@@ -238,7 +238,7 @@ http-response ^https://api\.rr\.tv/v3plus/index/(channel|todayChoice)$ requires-
 
 hostname = api.rr.tv
 
-## 网易漫画Vip  自用版
+## 网易漫画Vip  
 
 > 来源：[NobyDa/Script](https://github.com/NobyDa/Script)
 
@@ -272,7 +272,7 @@ hostname = *.googlevideo.com
 
 > 作者：[onewayticket255](https://github.com/onewayticket255/Surge-Script)
 
-> 修改: [小壮]
+> 修改: [小壮](https://github.com/primovist)
 
 [Script]
 
