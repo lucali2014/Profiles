@@ -33,6 +33,10 @@ hostname = *.snssdk.com
 
 ## tiktok去水印
 
+> 来源：Choler/Surge
+
+> 作者：Choler
+
 [Script]
 
 http-request ^https:\/\/[\s\S]*\/aweme\/v1\/play\/\?video script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/Amark.js,requires-body=true
