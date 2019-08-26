@@ -1,11 +1,11 @@
-/**
-by onewayticket25
 
-http-response https://api.zhihu.com/.*/questions requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Surge/Script/zhihuAnswer.js,script-update-interval=-1
+//by onewayticket25
 
-hostname = app.zhihu.com
+//http-response https://api.zhihu.com/.*/questions requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Surge/Script/zhihuAnswer.js,script-update-interval=-1
 
-**/
+//hostname = app.zhihu.com
+
+
 
 
 
