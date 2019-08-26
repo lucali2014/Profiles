@@ -21,7 +21,7 @@ hostname = api.amemv.com, api*.musical.ly, api*.tiktokv.com, api.zhihu.com, app.
 
 # > [Script]
 
-##抖音去水印去广告
+## 抖音去水印去广告
 
 [Script]
 
