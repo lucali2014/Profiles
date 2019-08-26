@@ -33,6 +33,8 @@ hostname = *.snssdk.com
 
 # tiktok去水印
 
+[Script]
+
 http-request ^https:\/\/[\s\S]*\/aweme\/v1\/play\/\?video script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/Amark.js,requires-body=true
 
 [MITM]
@@ -41,6 +43,8 @@ hostname = api.amemv.com, api*.musical.ly, api*.tiktokv.com
 
 
 #  知乎去广告
+
+[Script]
 
 http-response https://api.zhihu.com/moments requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/zhihuFeed.js,script-update-interval=-1
 
@@ -55,6 +59,8 @@ http-response https://api.zhihu.com/market/header requires-body=1,max-size=0,scr
 hostname = api.zhihu.com,
 
 # 哔哩哔哩去广告
+
+[Script]
 
 http-response https://app.bilibili.com/x/resource/show/tab requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/bilibiliTab.js,script-update-interval=-1
 
@@ -72,6 +78,8 @@ hostname = app.bilibili.com, api.bilibili.com
 
 #  酷我音乐vip
 
+[Script]
+
 https?:\/\/.*\.kuwo\.cn script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/kuwovip.js,requires-body=true
 
 [MITM]
@@ -79,6 +87,8 @@ https?:\/\/.*\.kuwo\.cn script-path=https://raw.githubusercontent.com/Cyansx/Pro
 hostname = *.kuwo.cn,
 
 # 南瓜电影
+
+[Script]
 
 http-response https?:\/\/p\.doras\.api\.vcinema\.cn\/v5.0\/user/  script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/ngdy.js,requires-body=true
 
@@ -88,6 +98,8 @@ hostname = *.api.vcinema.cn
 
 # 微博去广告
 
+[Script]
+
 http-response ^https?:\/\/(api|mapi)\.weibo\.(cn|com)\/2/(statuses\/(unread|extend|positives/get|friends(\/|_)timeline)|stories\/(video_stream|home_list)|groups\/timeline|fangle\/timeline|profile\/statuses|comments\/build_comments|photo\/recommend_list|service\/picfeed|searchall|cardlist) script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/wb_ad.js,requires-body=true
 
 [MITM]
@@ -96,6 +108,8 @@ hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com
 
 # 网易漫画vip
 
+[Script]
+
  http-response https?:\/\/api-163\.biliapi\.net\/getUserProfile script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/wymh.js,requires-body=true
 
 [MITM]
@@ -103,6 +117,8 @@ hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com
 hostname = api-163.biliapi.net, getuserinfo-globalapi.zymk.cn
 
 # 知音漫客vip
+
+[Script]
 
 http-response ^https://getuserinfo-globalapi.zymk.cn/app_api/v5/(getuserinfo|coin_account|getuserinfo_ticket|getcomicinfo)/ script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/zymk.js,requires-body = true
 
