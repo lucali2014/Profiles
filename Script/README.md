@@ -29,7 +29,7 @@ hostname = api.amemv.com, api*.musical.ly, api*.tiktokv.com, api.zhihu.com, app.
 
 # [Script]
 
-## 抖音去水印去广告
+# 抖音去水印去广告
 
 > 来源：[Choler/Surge](https://github.com/Choler/Surge)
 
@@ -43,7 +43,7 @@ http-response ^https://[\s\S]*\.snssdk\.com/.+/(feed|post)/ requires-body=1,max-
 
 hostname = *.snssdk.com
 
-## tiktok去水印
+# tiktok去水印
 
 > 来源：[Choler/Surge](https://github.com/Choler/Surge)
 
@@ -58,7 +58,7 @@ http-request ^https:\/\/[\s\S]*\/aweme\/v1\/play\/\?video script-path=https://ra
 hostname = api.amemv.com, api*.musical.ly, api*.tiktokv.com
 
 
-## 知乎去广告
+# 知乎去广告
 
 > 来源：[onewayticket255/Surge-Script](https://github.com/onewayticket255/Surge-Script)
 
@@ -78,7 +78,7 @@ http-response https://api.zhihu.com/market/header requires-body=1,max-size=0,scr
 
 hostname = api.zhihu.com,
 
-## 哔哩哔哩去广告
+# 哔哩哔哩去广告
 
 > 来源：[onewayticket255/Surge-Script](https://github.com/onewayticket255/Surge-Script)
 
@@ -100,7 +100,7 @@ http-response https://app.bilibili.com/x/v2/rank requires-body=1,max-size=0,scri
 
 hostname = app.bilibili.com, api.bilibili.com
 
-## 酷我音乐vip
+# 酷我音乐vip
 
 > 来源：[MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)
 
@@ -114,7 +114,7 @@ https?:\/\/.*\.kuwo\.cn script-path=https://raw.githubusercontent.com/Cyansx/Pro
 
 hostname = *.kuwo.cn,
 
-## 南瓜电影
+# 南瓜电影
 
 > 来源：[MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)
 
@@ -128,7 +128,7 @@ http-response https?:\/\/p\.doras\.api\.vcinema\.cn\/v5.0\/user/  script-path= h
 
 hostname = *.api.vcinema.cn
 
-## 微博去广告
+# 微博去广告
 
 > 来源：[yichahucha/surge](https://github.com/yichahucha/surge)
 
@@ -142,7 +142,7 @@ http-response ^https?:\/\/(api|mapi)\.weibo\.(cn|com)\/2/(statuses\/(unread|exte
 
 hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com
 
-## 网易漫画vip
+# 网易漫画vip
 
 > 来源：[MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)
 
@@ -156,7 +156,7 @@ hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com
 
 hostname = api-163.biliapi.net, getuserinfo-globalapi.zymk.cn
 
-## 知音漫客vip
+# 知音漫客vip
 
 > 来源：[mieqq/mieqq](https://github.com/mieqq/mieqq)
 
@@ -171,7 +171,7 @@ http-response ^https://getuserinfo-globalapi.zymk.cn/app_api/v5/(getuserinfo|coi
 hostname = getuserinfo-globalapi.zymk.cn
 
 
-## 网易蜗牛读书
+# 网易蜗牛读书
 
 > 来源：[yxiaocai/quanx](https://github.com/yxiaocai/quanx)、[JO2EY/Rules](https://github.com/JO2EY/Rules)
 
@@ -205,7 +205,7 @@ hostname = p.du.163.com
 
 ^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json url response-body "tradeEndTime":\d{10} response-body "tradeEndTime":1679685290
 
-## 微信公众号去广告
+# 微信公众号去广告
 
 > 来源：[Choler/Surge](https://github.com/Choler/Surge)
 
@@ -219,7 +219,7 @@ http-response ^https://mp\.weixin\.qq\.com/mp/getappmsgad requires-body=1,max-si
 
 hostname = mp.weixin.qq.com
 
-## 今日头条去广告
+# 今日头条去广告
 
 > 来源：[Choler/Surge](https://github.com/Choler/Surge)
 
@@ -233,7 +233,7 @@ http-response ^https://[a-zA-Z]*\.snssdk\.com/api/news/feed/v88/ requires-body=1
 
 hostname = *.snssdk.com
 
-## 人人视频去广告
+# 人人视频去广告
 
 > 来源：[Choler/Surge](https://github.com/Choler/Surge)
 
@@ -247,7 +247,7 @@ http-response ^https://api\.rr\.tv/v3plus/index/(channel|todayChoice)$ requires-
 
 hostname = api.rr.tv
 
-## 网易漫画Vip  
+# 网易漫画Vip  
 
 > 来源：[NobyDa/Script](https://github.com/NobyDa/Script)
 
@@ -261,7 +261,7 @@ hostname = api.rr.tv
 
 hostname = api-163.biliapi.net,
 
-## YouTube
+# YouTube
 
 > 来源：[Choler/Surge](https://github.com/Choler/Surge)
 
@@ -275,7 +275,7 @@ http-request ^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier) script-path= http
 
 hostname = *.googlevideo.com
 
-## 哔哩哔哩去广告 合并版
+# 哔哩哔哩去广告 合并版
 
 > 来源：[onewayticket255/Surge-Script](https://github.com/onewayticket255/Surge-Script)
 
@@ -291,7 +291,7 @@ http-response ^https?:\/\/ap(i|p).bilibili.com\/x\/(resource\/show\/tab|(v2\/(re
 
 hostname = app.bilibili.com
 
-## 知乎去广告 合并版
+# 知乎去广告 合并版
 
 > 来源：[onewayticket255/Surge-Script](https://github.com/onewayticket255/Surge-Script)
 
