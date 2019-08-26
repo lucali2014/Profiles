@@ -282,4 +282,21 @@ http-response ^https?:\/\/ap(i|p).bilibili.com\/x\/(resource\/show\/tab|(v2\/(re
 
 hostname = app.bilibili.com
 
+## 知乎去广告 合并版
+
+> 来源：[onewayticket255/Surge-Script](https://github.com/onewayticket255/Surge-Script)
+
+> 作者：[onewayticket255](https://github.com/onewayticket255/Surge-Script)
+
+> 修改: [小壮](https://github.com/primovist)
+
+[Script]
+
+http-response ^https?:\/\/api\.zhihu\.com\/(moments\?|topstory\/recommend|.*\/questions|market\/header) requires-body=1,max-size=-1,script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/ZhiHu.js,script-update-interval=-1.js
+
+[MITM]
+
+hostname = app.zhihu.com
+
+
 
