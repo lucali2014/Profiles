@@ -2,13 +2,12 @@
 
 # [Rule]
 
-// ZhiHu
-
+## 知乎
 URL-REGEX,https://api.zhihu.com/(ab|fringe|zst|commercial|ad-style-service|topstory/hot-lists|market/popover|search/(top|tab|preset)|.*(recommendations|featured-comment-ad)),REJECT
 
 AND,((USER-AGENT,osee2*), (NOT,((DOMAIN,api.zhihu.com))), (NOT,((DOMAIN,link.zhihu.com))), (NOT,((DOMAIN,lens.zhihu.com))), (NOT,((DOMAIN,www.zhihu.com))), (NOT,((DOMAIN-SUFFIX,zhimg.com)))),REJECT
 
-// BiliBili
+## 哔哩哔哩
 
 URL-REGEX,https://app.bilibili.com/(pgc/season/rank/cn|x/v2/(rank.*rid=(168|5)|search/(defaultword|hot|recommend|resource))),REJECT
 
@@ -23,6 +22,10 @@ hostname = api.amemv.com, api*.musical.ly, api*.tiktokv.com, api.zhihu.com, app.
 
 ## 抖音去水印去广告
 
+> 来源：[Choler/Surge](https://github.com/Choler/Surge)
+
+> 作者：[Choler](https://github.com/Choler/Surge)
+
 [Script]
 
 http-response ^https://[\s\S]*\.snssdk\.com/.+/(feed|post)/ requires-body=1,max-size=-1,script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/Aweme.js
@@ -35,7 +38,7 @@ hostname = *.snssdk.com
 
 > 来源：[Choler/Surge](https://github.com/Choler/Surge)
 
-> 作者：Choler
+> 作者：[Choler](https://github.com/Choler/Surge)
 
 [Script]
 
@@ -46,7 +49,11 @@ http-request ^https:\/\/[\s\S]*\/aweme\/v1\/play\/\?video script-path=https://ra
 hostname = api.amemv.com, api*.musical.ly, api*.tiktokv.com
 
 
-##  知乎去广告
+## 知乎去广告
+
+> 来源：[onewayticket255/Surge-Script](https://github.com/onewayticket255/Surge-Script)
+
+> 作者：[onewayticket255](https://github.com/onewayticket255/Surge-Script)
 
 [Script]
 
@@ -64,6 +71,10 @@ hostname = api.zhihu.com,
 
 ## 哔哩哔哩去广告
 
+> 来源：[onewayticket255/Surge-Script](https://github.com/onewayticket255/Surge-Script)
+
+> 作者：[onewayticket255](https://github.com/onewayticket255/Surge-Script)
+
 [Script]
 
 http-response https://app.bilibili.com/x/resource/show/tab requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/bilibiliTab.js,script-update-interval=-1
@@ -80,7 +91,11 @@ http-response https://app.bilibili.com/x/v2/rank requires-body=1,max-size=0,scri
 
 hostname = app.bilibili.com, api.bilibili.com
 
-##  酷我音乐vip
+## 酷我音乐vip
+
+> 来源：[MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)
+
+> 作者：[Meeta](https://github.com/MeetaGit/MeetaRules)
 
 [Script]
 
@@ -92,6 +107,10 @@ hostname = *.kuwo.cn,
 
 ## 南瓜电影
 
+> 来源：[MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)
+
+> 作者：[Meeta](https://github.com/MeetaGit/MeetaRules)
+
 [Script]
 
 http-response https?:\/\/p\.doras\.api\.vcinema\.cn\/v5.0\/user/  script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/ngdy.js,requires-body=true
@@ -101,6 +120,10 @@ http-response https?:\/\/p\.doras\.api\.vcinema\.cn\/v5.0\/user/  script-path= h
 hostname = *.api.vcinema.cn
 
 ## 微博去广告
+
+> 来源：[yichahucha/surge](https://github.com/yichahucha/surge)
+
+> 作者：[yichahucha](https://github.com/yichahucha/surge)
 
 [Script]
 
@@ -112,6 +135,10 @@ hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com
 
 ## 网易漫画vip
 
+> 来源：[MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)
+
+> 作者：[Meeta](https://github.com/MeetaGit/MeetaRules)
+
 [Script]
 
  http-response https?:\/\/api-163\.biliapi\.net\/getUserProfile script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/wymh.js,requires-body=true
@@ -121,6 +148,10 @@ hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com
 hostname = api-163.biliapi.net, getuserinfo-globalapi.zymk.cn
 
 ## 知音漫客vip
+
+> 来源：[mieqq/mieqq](https://github.com/mieqq/mieqq)
+
+> 作者：[pysta](https://github.com/mieqq/mieqq)
 
 [Script]
 
@@ -132,6 +163,12 @@ hostname = getuserinfo-globalapi.zymk.cn
 
 
 ## 网易蜗牛读书
+
+> 来源：[yxiaocai/quanx](https://github.com/yxiaocai/quanx)、[JO2EY/Rules](https://github.com/JO2EY/Rules)
+
+> 作者：佚名
+
+> 修改：[yxiaocai](https://github.com/yxiaocai/quanx)、[旺仔](https://github.com/JO2EY/Rules)
 
 // Surge
 
@@ -161,6 +198,10 @@ hostname = p.du.163.com
 
 ## 微信公众号去广告
 
+> 来源：[Choler/Surge](https://github.com/Choler/Surge)
+
+> 作者：[Choler](https://github.com/Choler/Surge)
+
 [Script]
 
 http-response ^https://mp\.weixin\.qq\.com/mp/getappmsgad requires-body=1,max-size=-1,script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/WeChat.js
@@ -170,6 +211,10 @@ http-response ^https://mp\.weixin\.qq\.com/mp/getappmsgad requires-body=1,max-si
 hostname = mp.weixin.qq.com
 
 ## 今日头条去广告
+
+> 来源：[Choler/Surge](https://github.com/Choler/Surge)
+
+> 作者：[Choler](https://github.com/Choler/Surge)
 
 [Script]
 
@@ -181,6 +226,10 @@ hostname = *.snssdk.com
 
 ## 人人视频去广告
 
+> 来源：[Choler/Surge](https://github.com/Choler/Surge)
+
+> 作者：[Choler](https://github.com/Choler/Surge)
+
 [Script]
 
 http-response ^https://api\.rr\.tv/v3plus/index/(channel|todayChoice)$ requires-body=1,max-size=-1,script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master//Script/RRad.js
@@ -189,7 +238,11 @@ http-response ^https://api\.rr\.tv/v3plus/index/(channel|todayChoice)$ requires-
 
 hostname = api.rr.tv
 
-## 网易漫画Vip  NobyDa自用版
+## 网易漫画Vip  自用版
+
+> 来源：[NobyDa/Script](https://github.com/NobyDa/Script)
+
+> 作者：[野比](https://github.com/NobyDa/Script)
 
 // quantumult x
 
@@ -201,6 +254,10 @@ hostname = api-163.biliapi.net,
 
 ## YouTube
 
+> 来源：[Choler/Surge](https://github.com/Choler/Surge)
+
+> 作者：[Choler](https://github.com/Choler/Surge)
+
 [Script]
 
 http-request ^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier) script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/YouTube.js
@@ -211,6 +268,12 @@ hostname = *.googlevideo.com
 
 ## 哔哩哔哩去广告 合并版
 
+> 来源：[onewayticket255/Surge-Script](https://github.com/onewayticket255/Surge-Script)
+
+> 作者：[onewayticket255](https://github.com/onewayticket255/Surge-Script)
+
+> 修改: [小壮]
+
 [Script]
 
 http-response ^https?:\/\/ap(i|p).bilibili.com\/x\/(resource\/show\/tab|(v2\/(reply\/main|view\/material|view|account\/mine|feed))) requires-body=1,max-size=-1,script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/Bilibili.js
@@ -218,3 +281,5 @@ http-response ^https?:\/\/ap(i|p).bilibili.com\/x\/(resource\/show\/tab|(v2\/(re
 [MITM]
 
 hostname = app.bilibili.com
+
+
