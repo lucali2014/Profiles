@@ -178,3 +178,13 @@ hostname = api.rr.tv
 ^https?:\/\/api-163\.biliapi\.net\/(getUserProfile|source\/detail) url script-response-body https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/wymh163.js
 
 hostname = api-163.biliapi.net,
+
+# YouTube
+
+[Script]
+
+http-request ^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier) script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/YouTube.js
+
+[MITM]
+
+hostname = *.googlevideo.com
