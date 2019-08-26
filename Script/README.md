@@ -204,3 +204,13 @@ http-request ^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier) script-path= http
 [MITM]
 
 hostname = *.googlevideo.com
+
+# 哔哩哔哩去广告 合并版
+
+[Script]
+
+http-response ^https?:\/\/ap(i|p).bilibili.com\/x\/(resource\/show\/tab|(v2\/(reply\/main|view\/material|view|account\/mine|feed))) requires-body=1,max-size=-1,script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/Bilibili.js
+ 
+[MITM]
+
+hostname = app.bilibili.com
