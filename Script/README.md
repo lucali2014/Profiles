@@ -301,7 +301,7 @@ hostname = app.bilibili.com
 
 [Script]
 
-http-response ^https?:\/\/api\.zhihu\.com\/(moments\?|topstory\/recommend|.*\/questions|market\/header) requires-body=1,max-size=-1,script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/ZhiHu.js,script-update-interval=-1.js
+http-response ^https?:\/\/api\.zhihu\.com\/(moments\?|topstory\/recommend|.*\/questions|market\/header) requires-body=1,max-size=-1,script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/zhihu.js,script-update-interval=-1.js
 
 [MITM]
 
