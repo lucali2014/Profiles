@@ -179,7 +179,7 @@ hostname = getuserinfo-globalapi.zymk.cn
 
 > 修改：[yxiaocai](https://github.com/yxiaocai/quanx)、[旺仔](https://github.com/JO2EY/Rules)
 
-// Surge
+- Surge
 
 [URL Rewrite]
 
@@ -193,7 +193,7 @@ http-response ^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json script-pat
 
 hostname = p.du.163.com
 
-//Quantumult X 
+- Quantumult X 
 
 hostname = p.du.163.com
 
@@ -253,7 +253,7 @@ hostname = api.rr.tv
 
 > 作者：[野比](https://github.com/NobyDa/Script)
 
-// quantumult x
+- quantumult x
 
 [rewrite_local]
 
