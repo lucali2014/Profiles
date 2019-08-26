@@ -33,7 +33,7 @@ hostname = *.snssdk.com
 
 ## tiktok去水印
 
-> 来源：Choler/Surge
+> 来源：【Choler/Surge】（https://github.com/Choler/Surge）
 
 > 作者：Choler
 
