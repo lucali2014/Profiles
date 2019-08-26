@@ -1,6 +1,6 @@
 # 所有脚本皆为搬运，脚本内均标注来源作者
 
-# > [Rule]
+# [Rule]
 
 // ZhiHu
 
@@ -19,7 +19,7 @@ hostname = api.amemv.com, api*.musical.ly, api*.tiktokv.com, api.zhihu.com, app.
 
 
 
-# > [Script]
+# [Script]
 
 ## 抖音去水印去广告
 
@@ -31,7 +31,7 @@ http-response ^https://[\s\S]*\.snssdk\.com/.+/(feed|post)/ requires-body=1,max-
 
 hostname = *.snssdk.com
 
-# tiktok去水印
+## tiktok去水印
 
 [Script]
 
@@ -42,7 +42,7 @@ http-request ^https:\/\/[\s\S]*\/aweme\/v1\/play\/\?video script-path=https://ra
 hostname = api.amemv.com, api*.musical.ly, api*.tiktokv.com
 
 
-#  知乎去广告
+##  知乎去广告
 
 [Script]
 
@@ -58,7 +58,7 @@ http-response https://api.zhihu.com/market/header requires-body=1,max-size=0,scr
 
 hostname = api.zhihu.com,
 
-# 哔哩哔哩去广告
+## 哔哩哔哩去广告
 
 [Script]
 
@@ -76,7 +76,7 @@ http-response https://app.bilibili.com/x/v2/rank requires-body=1,max-size=0,scri
 
 hostname = app.bilibili.com, api.bilibili.com
 
-#  酷我音乐vip
+##  酷我音乐vip
 
 [Script]
 
@@ -86,7 +86,7 @@ https?:\/\/.*\.kuwo\.cn script-path=https://raw.githubusercontent.com/Cyansx/Pro
 
 hostname = *.kuwo.cn,
 
-# 南瓜电影
+## 南瓜电影
 
 [Script]
 
@@ -96,7 +96,7 @@ http-response https?:\/\/p\.doras\.api\.vcinema\.cn\/v5.0\/user/  script-path= h
 
 hostname = *.api.vcinema.cn
 
-# 微博去广告
+## 微博去广告
 
 [Script]
 
@@ -106,7 +106,7 @@ http-response ^https?:\/\/(api|mapi)\.weibo\.(cn|com)\/2/(statuses\/(unread|exte
 
 hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com
 
-# 网易漫画vip
+## 网易漫画vip
 
 [Script]
 
@@ -116,7 +116,7 @@ hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com
 
 hostname = api-163.biliapi.net, getuserinfo-globalapi.zymk.cn
 
-# 知音漫客vip
+## 知音漫客vip
 
 [Script]
 
@@ -127,7 +127,7 @@ http-response ^https://getuserinfo-globalapi.zymk.cn/app_api/v5/(getuserinfo|coi
 hostname = getuserinfo-globalapi.zymk.cn
 
 
-# 网易蜗牛读书
+## 网易蜗牛读书
 
 // Surge
 
@@ -155,7 +155,7 @@ hostname = p.du.163.com
 
 ^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json url response-body "tradeEndTime":\d{10} response-body "tradeEndTime":1679685290
 
-# 微信公众号去广告
+## 微信公众号去广告
 
 [Script]
 
@@ -165,7 +165,7 @@ http-response ^https://mp\.weixin\.qq\.com/mp/getappmsgad requires-body=1,max-si
 
 hostname = mp.weixin.qq.com
 
-# 今日头条去广告
+## 今日头条去广告
 
 [Script]
 
@@ -175,7 +175,7 @@ http-response ^https://[a-zA-Z]*\.snssdk\.com/api/news/feed/v88/ requires-body=1
 
 hostname = *.snssdk.com
 
-# 人人视频去广告
+## 人人视频去广告
 
 [Script]
 
@@ -185,7 +185,7 @@ http-response ^https://api\.rr\.tv/v3plus/index/(channel|todayChoice)$ requires-
 
 hostname = api.rr.tv
 
-# 网易漫画Vip  NobyDa自用版
+## 网易漫画Vip  NobyDa自用版
 
 // quantumult x
 
@@ -195,7 +195,7 @@ hostname = api.rr.tv
 
 hostname = api-163.biliapi.net,
 
-# YouTube
+## YouTube
 
 [Script]
 
@@ -205,7 +205,7 @@ http-request ^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier) script-path= http
 
 hostname = *.googlevideo.com
 
-# 哔哩哔哩去广告 合并版
+## 哔哩哔哩去广告 合并版
 
 [Script]
 
