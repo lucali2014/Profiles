@@ -3,7 +3,7 @@
 
 [Script]
 
-http-response ^https?:\/\/ap(i|p).bilibili.com\/x\/(resource\/show\/tab|(v2\/(reply\/main|view\/material|view|account\/mine|feed))) requires-body=1,max-size=-1,script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/Bilibili.js
+http-response ^https?:\/\/ap(i|p).bilibili.com\/x\/(resource\/show\/tab|v2\/(reply\/main|view\/material|account\/mine|view|feed\/index)\?access_key) requires-body=1,max-size=-1,script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/Bilibili.js
  
 [MITM]
 hostname = app.bilibili.com
@@ -14,9 +14,10 @@ hostname = app.bilibili.com
 const path1 = "/x/resource/show/tab";
 const path2 = "/x/v2/feed";
 const path3 = "/x/v2/account/mine";
-const path4 = "/x/v2/view";
-const path5 = "/x/v2/view/material";
-const path6 = "/x/v2/reply/main";
+const path4 = "/x/v2/view?access_key";
+const path5 = "/x/v2/view/material?access_key";
+const path6 = "/x/v2/reply/main?access_key";
+
 
 const url = $request.url;
 var body = $response.body;
