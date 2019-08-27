@@ -285,7 +285,7 @@ hostname = *.googlevideo.com
 
 [Script]
 
-http-response ^https?:\/\/ap(i|p).bilibili.com\/x\/(resource\/show\/tab|(v2\/(reply\/main|view\/material|view|account\/mine|feed))) requires-body=1,max-size=-1,script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/Bilibili.js
+http-response ^https?:\/\/ap(i|p).bilibili.com\/x\/(resource\/show\/tab|v2\/(reply\/main|view\/material|account\/mine|view|feed\/index)\?access_key) requires-body=1,max-size=-1,script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/Bilibili.js
  
 [MITM]
 
