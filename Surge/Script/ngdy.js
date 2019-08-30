@@ -23,7 +23,7 @@ if (url.indexOf(path1) != -1){
   obj.content["user_level_str"] = "Lv5男爵";
   obj.content["user_vip_state"] = "2";
   obj.content["user_nickname"] = "cyan";
-  obj.content["user_vip_start_date"] = "2019.05.18";
+  obj.content["user_vip_start_date"] = "2019.07.17";
   obj.content["user_vip_end_date"] = "2066.01.01";
   body = JSON.stringify(obj);
 }
