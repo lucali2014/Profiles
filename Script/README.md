@@ -37,11 +37,11 @@ hostname = api.amemv.com, api*.musical.ly, api*.tiktokv.com, api.zhihu.com, app.
 
 [Script]
 
-http-response ^https://[\s\S]*\.snssdk\.com/.+/(feed|post)/ requires-body=1,max-size=-1,script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/Aweme.js
+http-response ^https://[\s\S]*\/aweme/v1/(feed|aweme/post|follow/feed)/ requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Surge/Script/Aweme.js
 
 [MITM]
 
-hostname = *.snssdk.com
+hostname = *.amemv.com, *.snssdk.com
 
 # tiktok去水印
 
@@ -309,3 +309,4 @@ hostname = app.zhihu.com
 
 
 
+我
