@@ -307,7 +307,7 @@ http-response ^https?:\/\/api\.zhihu\.com\/(moments\?|topstory\/recommend|.*\/qu
 
 hostname = app.zhihu.com
 
-# 大千世界破解5分钟限制 
+# 大千视界破解5分钟限制 
 
 > 来源：[NobyDa/Script](https://github.com/NobyDa/Script)
 
