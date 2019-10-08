@@ -307,6 +307,22 @@ http-response ^https?:\/\/api\.zhihu\.com\/(moments\?|topstory\/recommend|.*\/qu
 
 hostname = app.zhihu.com
 
+# 大千世界破解5分钟限制 
 
+> 来源：[NobyDa/Script](https://github.com/NobyDa/Script)
 
-我
+> 作者：[野比](https://github.com/NobyDa/Script)
+
+[Script]
+
+### surge
+
+http-response ^https:\/\/api\.mvmtv\.com\/index\.php.*(c=user.*a=info|a=addr.*vid=.*) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/dqsj.js
+
+### quantumult x
+
+^https:\/\/api\.mvmtv\.com\/index\.php.*(c=user.*a=info|a=addr.*vid=.*) url script-response-body https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/dqsj.js
+
+[MITM]
+
+hostname = api.mvmtv.com
