@@ -313,13 +313,15 @@ hostname = app.zhihu.com
 
 > 作者：[野比](https://github.com/NobyDa/Script)
 
-[Script]
-
 ### surge
+
+[Script]
 
 http-response ^https:\/\/api\.mvmtv\.com\/index\.php.*(c=user.*a=info|a=addr.*vid=.*) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/dqsj.js
 
 ### quantumult x
+
+[Script]
 
 ^https:\/\/api\.mvmtv\.com\/index\.php.*(c=user.*a=info|a=addr.*vid=.*) url script-response-body https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/dqsj.js
 
