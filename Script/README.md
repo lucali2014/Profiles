@@ -328,3 +328,25 @@ http-response ^https:\/\/api\.mvmtv\.com\/index\.php.*(c=user.*a=info|a=addr.*vi
 [MITM]
 
 hostname = api.mvmtv.com
+
+# 布丁漫画 
+
+> 来源：[NobyDa/Script](https://github.com/NobyDa/Script)
+
+> 作者：[野比](https://github.com/NobyDa/Script)
+
+### surge
+
+[Script]
+
+^https?:\/\/(bd|bdapp)\.4008109966\.net\/\/index\.php\/api\/User\/userLogin requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/bdmh.js
+
+### quantumult x
+
+[Script]
+
+^https?:\/\/(bd|bdapp)\.4008109966\.net\/\/index\.php\/api\/User\/userLogin url script-response-body https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/bdmh.js
+
+[MITM]
+
+hostname = bd.4008109966.net
