@@ -2,7 +2,7 @@
 
 # [Rule]
 
-### 知乎
+> 知乎
 
 URL-REGEX,https://api.zhihu.com/(ab|fringe|zst|commercial|ad-style-service|topstory/hot-lists|market/popover|search/(top|tab|preset)|.*(recommendations|featured-comment-ad)),REJECT
 
