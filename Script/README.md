@@ -357,10 +357,10 @@ hostname = bd.4008109966.net
 
 > 作者：[野比](https://github.com/NobyDa/Script)
 
-###Surge4:
+### Surge4:
 
 http-response http:\/\/mitaoapp\.yeduapp\.com\/\/index\.php\/api\/User\/userLogin requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/mtmh.js,script-update-interval=0
 
-###QuanX：
+### QuantumultX:
 
 http:\/\/mitaoapp\.yeduapp\.com\/\/index\.php\/api\/User\/userLogin url script-response-body https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/mtmh.js
