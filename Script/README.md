@@ -364,3 +364,21 @@ http-response http:\/\/mitaoapp\.yeduapp\.com\/\/index\.php\/api\/User\/userLogi
 ### QuantumultX:
 
 http:\/\/mitaoapp\.yeduapp\.com\/\/index\.php\/api\/User\/userLogin url script-response-body https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/mtmh.js
+
+# 万象直播
+
+> 来源：[NobyDa/Script](https://github.com/NobyDa/Script)
+
+> 作者：[野比](https://github.com/NobyDa/Script)
+ 
+### Surge4：
+
+http-response https:\/\/u\.kanghuayun\.com\/api\/v2\/info requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/wxzb.js
+
+MITM = u.kanghuayun.com
+
+### QuantumultX：
+
+https:\/\/u\.kanghuayun\.com\/api\/v2\/info url script-response-body https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/wxzb.js
+
+MITM = u.kanghuayun.com
