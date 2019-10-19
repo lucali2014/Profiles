@@ -435,3 +435,19 @@ hostname = getuserinfo-globalapi.zymk.cn
 [filter_local]
 
 host-suffix, adserver-ad.321mh.com, reject
+
+# 哔哩哔哩番剧默认开启1080P+
+
+QuantumultX : 
+
+^https?:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl url response-body "quality":80, response-body "quality":112,
+
+hostname = api.bilibili.com
+
+Surge 4 TF :
+
+http-response https?:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/bilibili1080.js,requires-body=true
+
+hostname = api.bilibili.com
+
+注意 : 如番剧清晰度无1080P+ 请不要开启此脚本
