@@ -451,3 +451,13 @@ http-response https?:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl script-pa
 hostname = api.bilibili.com
 
 注意 : 如番剧清晰度无1080P+ 请不要开启此脚本
+
+# Pixiv (P站) 解除热门度搜索 伪装vip
+
+Surge4：
+
+http-response https://oauth.secure.pixiv.net/auth/token requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/pixiv.js,script-update-interval=-1
+
+http-request https://app-api.pixiv.net/v1/search.*popular script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/pixiv.js,script-update-interval=-1
+
+Surge MITM = oauth.secure.pixiv.net, app-api.pixiv.net,
