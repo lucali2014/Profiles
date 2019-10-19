@@ -426,7 +426,7 @@ Surge & QX MITM = api1.dobenge.cn
 
 [rewrite_local]
 
-^https://getuserinfo-globalapi.zymk.cn/app_api/v5/(getuserinfo|coin_account|getuserinfo_ticket|getcomicinfo)/ url script-response-body https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/zymh.js
+^https://getuserinfo-globalapi.zymk.cn/app_api/v5/(getuserinfo|coin_account|getuserinfo_ticket|getcomicinfo)/ url script-response-body https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/zymh2.js
 
 hostname = getuserinfo-globalapi.zymk.cn
 
