@@ -421,3 +421,17 @@ https:\/\/api1\.dobenge\.cn\/api\/user\/getuserinfo url script-response-body htt
 Surge & QX MITM = api1.dobenge.cn
 
 
+
+# 知音漫客VIP 解锁收费章节
+
+[rewrite_local]
+
+^https://getuserinfo-globalapi.zymk.cn/app_api/v5/(getuserinfo|coin_account|getuserinfo_ticket|getcomicinfo)/ url script-response-body https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/zymh.js
+
+hostname = getuserinfo-globalapi.zymk.cn
+
+如有启动广告可添加分流规则:
+
+[filter_local]
+
+host-suffix, adserver-ad.321mh.com, reject
