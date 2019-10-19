@@ -408,3 +408,16 @@ QX:
 
 Surge & QX MITM = pay.guoing.com, p.doras.api.vcinema.cn,
 
+# 水印精灵vip
+
+Surge4：
+
+http-response https:\/\/api1\.dobenge\.cn\/api\/user\/getuserinfo requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/syjl.js
+
+QX：
+
+https:\/\/api1\.dobenge\.cn\/api\/user\/getuserinfo url script-response-body https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/syjl.js
+
+Surge & QX MITM = api1.dobenge.cn
+
+
