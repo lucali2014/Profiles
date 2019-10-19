@@ -387,10 +387,24 @@ MITM = u.kanghuayun.com
 
 Surge4：
 
-http-response ^https:\/\/viva\.v21xy\.com\/api\/rest\/u\/vip requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js
+http-response ^https:\/\/viva\.v21xy\.com\/api\/rest\/u\/vip requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/xy.js
 
 QX：
 
-^https:\/\/viva\.v21xy\.com\/api\/rest\/u\/vip url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js
+^https:\/\/viva\.v21xy\.com\/api\/rest\/u\/vip url script-response-body https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/xy.js
 
 Surge & QX MITM = viva.v21xy.com
+
+
+#南瓜电影 商店版 unlock vip
+
+Surge:
+
+http-response ^https:\/\/(p\.doras\.api\.vcinema\.cn|pay\.guoing\.com)\/(v5\.0\/user\/\d+$|d\/user\/get_user_info) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/ngdy2.js
+
+QX:
+
+^https:\/\/(p\.doras\.api\.vcinema\.cn|pay\.guoing\.com)\/(v5\.0\/user\/\d+$|d\/user\/get_user_info) url script-response-body https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/ngdy2.js
+
+Surge & QX MITM = pay.guoing.com, p.doras.api.vcinema.cn,
+
