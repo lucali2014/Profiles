@@ -382,3 +382,15 @@ MITM = u.kanghuayun.com
 https:\/\/u\.kanghuayun\.com\/api\/v2\/info url script-response-body https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/wxzb.js
 
 MITM = u.kanghuayun.com
+
+# 小影
+
+Surge4：
+
+http-response ^https:\/\/viva\.v21xy\.com\/api\/rest\/u\/vip requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js
+
+QX：
+
+^https:\/\/viva\.v21xy\.com\/api\/rest\/u\/vip url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js
+
+Surge & QX MITM = viva.v21xy.com
