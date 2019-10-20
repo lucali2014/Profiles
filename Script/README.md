@@ -474,7 +474,7 @@ Surge MITM = oauth.secure.pixiv.net, app-api.pixiv.net,
 
 [Script]
 
-http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/JdPrice.js,requires-body=1
+http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/jd_price.js,requires-body=1
 
 [MITM]
 
