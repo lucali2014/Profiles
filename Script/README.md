@@ -458,6 +458,8 @@ hostname = api.bilibili.com
 
 # Pixiv (P站) 解除热门度搜索 伪装vip
 
+> 来源：[onewayticket255](https://github.com/onewayticket255]
+
 Surge4：
 
 http-response https://oauth.secure.pixiv.net/auth/token requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/pixiv.js,script-update-interval=-1
