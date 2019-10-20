@@ -43,6 +43,20 @@ http-response ^https://[\s\S]*\/aweme/v1/(feed|aweme/post|follow/feed)/ requires
 
 hostname = *.amemv.com, *.snssdk.com
 
+#抖音多功能
+
+[URL Rewrite]
+
+^https://aweme-eagle(.*)\.snssdk\.com/aweme/v2/ https://aweme-eagle$1.snssdk.com/aweme/v1/ 302
+
+[Script]
+
+http-response ^https://[\s\S]*\/aweme/v1/(feed|aweme/post|follow/feed)/ requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/Aweme2.js
+
+[MITM]
+
+hostname = *.amemv.com, *.snssdk.com
+
 # tiktok去水印
 
 > 来源：[Choler/Surge](https://github.com/Choler/Surge)
