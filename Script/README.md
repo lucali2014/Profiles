@@ -461,3 +461,15 @@ http-response https://oauth.secure.pixiv.net/auth/token requires-body=1,max-size
 http-request https://app-api.pixiv.net/v1/search.*popular script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/pixiv.js,script-update-interval=-1
 
 Surge MITM = oauth.secure.pixiv.net, app-api.pixiv.net,
+
+# 京东app 历史价格查询
+
+[Script]
+http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/JdPrice.js,requires-body=1
+
+[MITM]
+hostname = api.m.jd.com
+
+1. 仅Surge4可用
+
+2. 脚本来自 yichahucha
