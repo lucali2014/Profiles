@@ -385,6 +385,10 @@ MITM = u.kanghuayun.com
 
 # 小影
 
+> 来源：hiepkimcdtk55
+
+> 完善：野比
+
 Surge4：
 
 http-response ^https:\/\/viva\.v21xy\.com\/api\/rest\/u\/vip requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/xy.js
@@ -464,12 +468,13 @@ Surge MITM = oauth.secure.pixiv.net, app-api.pixiv.net,
 
 # 京东app 历史价格查询
 
+> 来源：yichahucha
+
 [Script]
+
 http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig) script-path= https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/JdPrice.js,requires-body=1
 
 [MITM]
+
 hostname = api.m.jd.com
 
-1. 仅Surge4可用
-
-2. 脚本来自 yichahucha
