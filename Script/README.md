@@ -508,3 +508,17 @@ http-response ^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22vid
 [MITM]
 
 hostname = ios.prod.ftl.netflix.com
+
+# VSCO vip 解锁滤镜 视频编辑等
+
+QuantumultX : 
+
+^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/\d{1,} url 302 https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/VSCO
+
+hostname = vsco.co
+
+Surge 4 TF :
+
+http-response https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/ script-path=https://raw.githubusercontent.com/Cyansx/Profiles/master/Script/vsco.js,requires-body=true
+
+hostname = vsco.co
