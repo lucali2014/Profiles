@@ -10,4 +10,4 @@ URL-REGEX,"^http:\/\/image1\.chinatelecom-ec\.com\/images\/.*\/client\w+\.jpg$"
 URL-REGEX,"^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/na\/m\/getLoadingPicture$"
 
 #> 电视多广告
-URL-REGEX,^http?:\/\/m\.hhalloy\.com\/data/.+Advertisement\/
+URL-REGEX,"^http?:\/\/m\.hhalloy\.com\/data/.+Advertisement\/"
